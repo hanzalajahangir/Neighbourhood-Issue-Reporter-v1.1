@@ -1,3 +1,4 @@
+import javax.swing.SwingUtilities;
 import java.util.Scanner;
 
 public class Main {
@@ -8,8 +9,7 @@ public class Main {
     private static User currentUser  = null;
 
     public static void main(String[] args) {
-        printBanner();
-        mainMenu();
+        SwingUtilities.invokeLater(() -> new SwingApp().setVisible(true));
     }
 
     // ════════════════════════════════════════════════════════

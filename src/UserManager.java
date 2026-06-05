@@ -38,6 +38,10 @@ public class UserManager {
         return null;
     }
 
+    public List<User> getAllUsers() {
+        return new ArrayList<>(users);
+    }
+
     // ── List all users ───────────────────────────────────────
     public void printAllUsers() {
         System.out.println("\n  Registered Users:");
